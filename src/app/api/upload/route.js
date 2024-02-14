@@ -4,7 +4,7 @@ import uniqid from 'uniqid';
 
 // Your Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAOkdER-FDd9-j7ZofdD1lXTOc_H7K_H2E",
+  apiKey:process.env.firebase_apiKey ,
   authDomain: "food-1a817.firebaseapp.com",
   projectId: "food-1a817",
   storageBucket: "food-1a817.appspot.com",
