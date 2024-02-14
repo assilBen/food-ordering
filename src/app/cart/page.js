@@ -5,7 +5,7 @@ import AddressInputs from "@/components/layout/AddressInputs";
 import SectionHeaders from "@/components/layout/SectionHeaders";
 import CartProduct from "@/components/menu/CartProduct";
 import {useProfile} from "@/components/UseProfile";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import {useContext, useEffect, useState} from "react";
 import toast from "react-hot-toast";
 
@@ -95,6 +95,7 @@ export default function CartPage() {
             <CartProduct
               key={index}
               product={product}
+              index={index} // Pass the index to the CartProduct component
               onRemove={removeCartProduct}
             />
           ))}
